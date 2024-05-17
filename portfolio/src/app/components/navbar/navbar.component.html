@@ -1,7 +1,13 @@
 <nav class="navbar">
-    <ul>
-        <li *ngFor="let link of navLinks">
-            <a [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
-        </li>
-    </ul>
+    <a class="homeButton"
+        [routerLink]="'/'"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"> Home </a> 
+    <div class="rightButtons">
+        <a *ngFor="let link of navLinks" 
+        [routerLink]="link.path" 
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >{{ link.label }}</a>
+    </div>
 </nav>
