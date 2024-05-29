@@ -1,4 +1,5 @@
 .navbar {
+    overflow: hidden;
     box-sizing: border-box;
     width: 100%;
     height: 40px;
@@ -7,17 +8,16 @@
     background-color: #fdfdfd;
     font-size: 15px;
     padding: 0 10%;
-    /* box-shadow: 0px 0px 0px 200px rgba(0,0,0,0.39); */
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.39);
   }
   
-  a {
+  a { 
+    font-family: Lucida Sans Unicode;
     text-decoration: none;
     color: #010101;
     /* mix-blend-mode: difference; */
     margin: 0 10px;
     padding: 10px 0;
-    font-family: ;
   }
   
   .navbar a.active {
