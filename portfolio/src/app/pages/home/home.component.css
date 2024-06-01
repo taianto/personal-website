@@ -7,22 +7,43 @@ body {
     margin-top: 0;
     padding-top: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: start;
     /* border: 2px solid red; */
+    position: relative;
 }
 
 
 .image {
-    width: 50%;
-    float: right;
-    /* border: 2px solid blue; */
+    max-height: 100%;
+    max-width: 50%;
+    z-index: -1;
 }
 
 .spacer {
+    margin: 10px;
     width: 50%;
     height: auto;
-    
+    align-self: center;
     position: relative;
     /* border: 2px solid black; */
+}
+
+@media screen and (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .image {
+        order: 0;
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    
+    .spacer {
+        order: 1;
+        width: calc(100% - 20px); 
+        max-width: calc(100% - 20px); 
+    }
 }

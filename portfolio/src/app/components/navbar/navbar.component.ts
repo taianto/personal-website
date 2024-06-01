@@ -12,8 +12,8 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent {
   navLinks = [
     // { label: 'Home', path: '' },
-    { label: 'About', path: '/about' },
-    { label: 'Portfolio', path: '/portfolio' },
-    { label: 'Contact', path: '/contact' }
+    // { label: 'About', path: '/about' },
+    // { label: 'Portfolio', path: '/portfolio' },
+    // { label: 'Contact', path: '/contact' }
   ];
 }
