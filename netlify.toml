@@ -1,0 +1,4 @@
+[build]
+    base = "portfolio/"
+    command = "ng build"
+    publish = "dist/portfolio/browser"
