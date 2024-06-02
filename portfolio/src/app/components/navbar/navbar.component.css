@@ -1,0 +1,40 @@
+.navbar {
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #fcc434;
+    font-size: 15px;
+    padding: 0 10%;
+    /* box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.39); */
+  }
+  
+  a { 
+    font-family: Lucida Sans Unicode;
+    text-decoration: none;
+    color: #101010;
+    /* mix-blend-mode: difference; */
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 100px;
+  }
+  
+  .navbar a.active {
+    color: #e6e75e;
+    background-color: #101010;
+    transition-duration: 0.2s;
+  }
+
+  .navbar a:hover {
+    transition-duration: 0.2s;
+    color: #7c724f;
+  }
+  
+  .rightButtons {
+    float: right;
+    margin-left: auto;
+    display: flex; 
+    align-items: center;
+  }
