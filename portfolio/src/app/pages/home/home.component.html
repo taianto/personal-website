@@ -1,8 +1,22 @@
 <div class="intro">
     <div class="spacer">
         <h3 style="font-family: 'Courier New', Courier, monospace"> Developer </h3>
-        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: normal;"> Welcome, my name is <b>Anton Tairov</b>, </h1>
-        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: normal;"> This is the digital lair of a Computer Science graduate from Trinity College Dublin! Dive in to discover my adventures in code, my triumphs over bugs, and the innovative projects that I’ve brought to life. From sleek algorithms to quirky side projects, this is where you'll find the essence of my journey through the labyrinth of technology. </h2>
+        <h1 style="font-family: Urbanist; font-weight: normal;"> Welcome, my name is <b>Anton Tairov</b>, </h1>
+        <h2 style="font-family: Urbanist; font-weight: normal;"> This is the digital lair of a Computer Science graduate from Trinity College Dublin! Dive in to discover my adventures in code, my triumphs over bugs, and the innovative projects that I’ve brought to life. From sleek algorithms to quirky side projects, this is where you'll find the essence of my journey through the labyrinth of technology. </h2>
+        
+        <a *ngFor="let link of socialButtons" 
+            mat-raised-button 
+            color="test" 
+            [href]="link.path"
+            target="_blank"
+            class="round-button">
+
+            <div class="button-content">
+                <img [src]="link.icon" width="20px"/>
+                <span>{{link.label}}</span>
+            </div>
+        </a>
+        
     </div>
     <img src="../../../assets/images/ProfilePicture.png" class="image"/>
 </div>

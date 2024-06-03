@@ -7,3 +7,18 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Balloo';
+    src: url('assets/fonts/Baloo_Bhaijaan_2/BalooBhaijaan2-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'InterTight';
+    src: url('assets/fonts/Inter_Tight/InterTight-VariableFont_wght.ttf');
+}
