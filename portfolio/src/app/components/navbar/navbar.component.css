@@ -12,7 +12,8 @@
   }
   
   a { 
-    font-family: Lucida Sans Unicode;
+    font-family: Urbanist;
+    font-weight: normal;
     text-decoration: none;
     color: #101010;
     /* mix-blend-mode: difference; */

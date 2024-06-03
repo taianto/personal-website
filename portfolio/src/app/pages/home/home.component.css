@@ -50,6 +50,11 @@ body {
     }
 }
 
+.mat-test {
+    color: #fcc434 !important;
+    background-color: #101010 !important;
+}
+
 ::ng-deep .mat-tab-label {
     border-radius: 10px; 
     overflow: hidden; 
@@ -67,4 +72,20 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 249, 232);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.round-button {
+    border-radius: 25px;
+    margin: 5px;
+}
+
+li {
+    font-family: Urbanist;
 }
