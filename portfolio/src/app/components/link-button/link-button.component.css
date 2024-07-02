@@ -1,0 +1,16 @@
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.round-button {
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.mat-test {
+    color: #fcc434 !important;
+    background-color: #101010 !important;
+}

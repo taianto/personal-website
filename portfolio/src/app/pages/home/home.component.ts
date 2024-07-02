@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatTabsModule} from '@angular/material/tabs';
-import {MatButtonModule} from '@angular/material/button';
+import { LinkButtonComponent } from '../../components/link-button/link-button.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatTabsModule, MatButtonModule, CommonModule],
+  imports: [MatTabsModule, CommonModule, LinkButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
