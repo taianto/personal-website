@@ -1,0 +1,17 @@
+<div class="card-border" #card [class.expanded]="isExpanded">
+    <div class="card-image" [style.backgroundImage]="'url(' + image + ')'"></div>
+    <div class="card-body">
+        <h1>{{title}}</h1>
+        <h2>Description</h2>
+        <p>{{description}}</p>
+        <h2>Features</h2>
+        <ul>
+          <li *ngFor="let line of featuresLines">{{ line }}</li>
+        </ul>
+        <h2>Check it out here!</h2>
+        <app-link-button *ngFor="let link of links" [path]="link.path" [icon]="link.icon" [label]="link.label">
+        </app-link-button>
+        <button *ngIf="!isExpanded" (click)="toggleExpanded()"> <u> View More </u> </button>
+        <button *ngIf="isExpanded" (click)="toggleExpanded()"> <u> View Less </u> </button>
+    </div>
+  </div>

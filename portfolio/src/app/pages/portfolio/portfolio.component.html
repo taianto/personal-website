@@ -1,1 +1,8 @@
-<p>portfolio works!</p>
+<app-project-card 
+  *ngFor="let project of projects"
+  [title]="project.title"
+  [description]="project.description"
+  [image]="project.image"
+  [features]="project.features"
+  [links]="project.links">
+</app-project-card>
